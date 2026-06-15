@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chaturthi ❤️ Sundresh | Wedding Invitation</title>
+<title>Chaturthi ❤️ Sundresh</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -18,13 +18,15 @@
 
 <body>
 
+<div id="loader">
+    <h1>Chaturthi ❤️ Sundresh</h1>
+</div>
+
 <audio id="bgMusic" loop>
     <source src="assets/music/music.mpeg" type="audio/mpeg">
 </audio>
 
 <button id="musicBtn">🎵 Music</button>
-
-<!-- HERO -->
 
 <section class="hero">
 
@@ -41,7 +43,7 @@ Together with our families,<br>
 invite you to celebrate our wedding
 </p>
 
-<a href="#events" class="btn">
+<a href="#countdown" class="btn">
 View Invitation
 </a>
 
@@ -49,9 +51,7 @@ View Invitation
 
 </section>
 
-<!-- COUNTDOWN -->
-
-<section class="countdown-section">
+<section id="countdown">
 
 <h2>Countdown To Wedding</h2>
 
@@ -81,9 +81,11 @@ View Invitation
 
 </section>
 
-<!-- EVENTS -->
+<section class="details-section">
 
-<section id="events">
+<div class="overlay"></div>
+
+<div class="content">
 
 <h2>Wedding Events</h2>
 
@@ -99,29 +101,37 @@ View Invitation
 
 </div>
 
+</div>
+
 </section>
 
-<!-- GALLERY -->
+<section class="gallery-section">
 
-<section>
+<div class="overlay"></div>
+
+<div class="content">
 
 <h2>Our Moments</h2>
 
 <div class="gallery">
 
-<img src="assets/images/img1.jpeg" alt="">
-<img src="assets/images/img2.jpeg" alt="">
-<img src="assets/images/img3.jpeg" alt="">
-<img src="assets/images/img4.jpeg" alt="">
-<img src="assets/images/img5.jpeg" alt="">
+<img src="assets/images/img1.jpeg">
+<img src="assets/images/img2.jpeg">
+<img src="assets/images/img3.jpeg">
+<img src="assets/images/img4.jpeg">
+<img src="assets/images/img5.jpeg">
+
+</div>
 
 </div>
 
 </section>
 
-<!-- VENUE -->
+<section class="venue-section">
 
-<section>
+<div class="overlay"></div>
+
+<div class="content">
 
 <h2>Wedding Venue</h2>
 
@@ -142,21 +152,28 @@ class="map-btn">
 
 </div>
 
+</div>
+
 </section>
 
-<!-- RSVP -->
-
-<section>
+<section class="rsvp-section">
 
 <h2>Bless Us With Your Presence</h2>
 
-<p class="blessing">
+<p>
 Your presence will make our special day even more memorable.
 </p>
 
-</section>
+<a
+href="https://wa.me/919999999999"
+class="whatsapp-btn"
+target="_blank">
 
-<!-- FOOTER -->
+RSVP on WhatsApp
+
+</a>
+
+</section>
 
 <footer>
 
