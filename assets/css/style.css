@@ -15,9 +15,27 @@ color:#fff;
 overflow-x:hidden;
 }
 
+/* Loader */
+
+#loader{
+position:fixed;
+inset:0;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+font-family:'Playfair Display',serif;
+font-size:2rem;
+transition:1s;
+}
+
+/* Common */
+
 section{
-padding:80px 20px;
+padding:100px 20px;
 text-align:center;
+position:relative;
 }
 
 h2{
@@ -25,6 +43,19 @@ font-family:'Playfair Display',serif;
 font-size:3rem;
 margin-bottom:30px;
 }
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.60);
+}
+
+.content{
+position:relative;
+z-index:2;
+}
+
+/* Hero */
 
 .hero{
 height:100vh;
@@ -35,13 +66,6 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-position:relative;
-}
-
-.overlay{
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.55);
 }
 
 .hero-content{
@@ -50,9 +74,8 @@ z-index:2;
 }
 
 .hero-content h3{
-font-size:1.2rem;
-letter-spacing:3px;
-margin-bottom:20px;
+letter-spacing:4px;
+margin-bottom:15px;
 }
 
 .hero-content h1{
@@ -71,9 +94,20 @@ display:inline-block;
 margin-top:25px;
 padding:14px 30px;
 background:#c28d7d;
+border-radius:40px;
 color:#fff;
 text-decoration:none;
-border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* Countdown */
+
+#countdown{
+background:#111;
 }
 
 .countdown{
@@ -84,7 +118,7 @@ flex-wrap:wrap;
 }
 
 .time-box{
-background:#111;
+background:#222;
 padding:20px;
 border-radius:20px;
 width:120px;
@@ -93,15 +127,33 @@ width:120px;
 .time-box span{
 font-size:2rem;
 font-weight:bold;
-color:#f6c6b8;
+color:#f7c8ba;
+}
+
+/* Events */
+
+.details-section{
+background:url('../images/details.jpeg');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 }
 
 .event-card{
-background:#111;
+background:rgba(0,0,0,.55);
 padding:30px;
 border-radius:20px;
 max-width:600px;
 margin:auto;
+}
+
+/* Gallery */
+
+.gallery-section{
+background:url('../images/gallery.jpeg');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 }
 
 .gallery{
@@ -119,11 +171,20 @@ transition:.4s;
 }
 
 .gallery img:hover{
-transform:scale(1.03);
+transform:scale(1.05);
+}
+
+/* Venue */
+
+.venue-section{
+background:url('../images/venue.jpeg');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 }
 
 .venue-card{
-background:#fff;
+background:white;
 color:#222;
 padding:30px;
 border-radius:20px;
@@ -141,29 +202,23 @@ text-decoration:none;
 border-radius:30px;
 }
 
-.blessing{
-font-size:1.2rem;
-max-width:600px;
-margin:auto;
+/* RSVP */
+
+.rsvp-section{
+background:#111;
 }
 
-footer{
-padding:40px 20px;
-background:#050505;
-text-align:center;
-}
-
-.developer-credit{
-margin-top:15px;
-font-size:11px;
-color:#aaa;
-line-height:1.8;
-}
-
-.developer-credit a{
-color:#aaa;
+.whatsapp-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#25D366;
+border-radius:30px;
 text-decoration:none;
+color:white;
 }
+
+/* Music */
 
 #musicBtn{
 position:fixed;
@@ -178,10 +233,32 @@ color:white;
 cursor:pointer;
 }
 
+/* Footer */
+
+footer{
+padding:40px 20px;
+text-align:center;
+background:#050505;
+}
+
+.developer-credit{
+margin-top:15px;
+font-size:11px;
+color:#aaa;
+line-height:1.8;
+}
+
+.developer-credit a{
+color:#aaa;
+text-decoration:none;
+}
+
+/* Mobile */
+
 @media(max-width:768px){
 
 .hero-content h1{
-font-size:2.7rem;
+font-size:2.6rem;
 }
 
 h2{
@@ -189,7 +266,11 @@ font-size:2rem;
 }
 
 .gallery img{
-height:280px;
+height:250px;
+}
+
+.time-box{
+width:90px;
 }
 
 }
